@@ -1,20 +1,11 @@
-## What's this about? ##
-Promise based REST client for browsers implemented using fetch API and built with Babel and Gulp.
-## API ##
-
- - get (String: resource, Object: params ) : Promise
- - getOne(String: resource, String: resourceId) : Promise
- - post(String: resource, Object: attributes) : Promise
- - put(String: resource, String: resourceId, Object: params) : Promise
- - delete(String: resource, String: resourceId) : Promise
-
-> Every promise returns a Mixin with the method json( ) among others. For more info go to [Mozilla docs.](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
-
-## How to use it? ##
-```html
-	<script type="text/javascript" src="[ROUTE_TO_LIBRARY]"></script>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example</title>
+	<script type="text/javascript" src="../lib/index.js"></script>
 	<script type="text/javascript">
-	var client = fetchService.init("https://jsonplaceholder.typicode.com");
+	//console.log(fetch);
+		var client = fetchService.init("https://jsonplaceholder.typicode.com");
 
     client.get("posts", {offset: 1, limit: 20})
       .then(res=>res.json())
@@ -46,4 +37,8 @@ Promise based REST client for browsers implemented using fetch API and built wit
       .then(res => console.log("response from DELETE", res))
       .catch(err => console.log("Error from DELETE", err));
 	</script>
-```
+</head>
+<body>
+
+</body>
+</html>
