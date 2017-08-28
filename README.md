@@ -41,7 +41,6 @@ Promise based REST client for browsers implemented using fetch API and built wit
     	client.delete("id");
 
     	client.delete("posts", 1)
-      //.then(res => res.json())
       .then(res=>res.json())
       .then(res => console.log("response from DELETE", res))
       .catch(err => console.log("Error from DELETE", err));

@@ -4,7 +4,7 @@
   "description": "Promise based REST client implemented using fetch API and built with Babel and Gulp",
   "main": "lib/index.js",
   "scripts": {
-    "test": "karma start",
+    "test": "./node_modules/.bin/karma start --browsers Firefox --single-run",
     "compile": "babel src -d lib"
   },
   "repository": {
