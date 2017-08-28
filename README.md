@@ -10,9 +10,16 @@ Promise based REST client for browsers implemented using fetch API and built wit
 
 > Every promise returns a Mixin with the method json( ) among others. For more info go to [Mozilla docs.](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
 
+## How to install ##
+
+```batch
+	npm install mp-fetch --save
+```
+
+
 ## How to use it? ##
 ```html
-	<script type="text/javascript" src="[ROUTE_TO_LIBRARY]"></script>
+	<script type="text/javascript" src="./node_modules/mp-fetch/lib/index.js"></script>
 	<script type="text/javascript">
 	var client = fetchService.init("https://jsonplaceholder.typicode.com");
 
