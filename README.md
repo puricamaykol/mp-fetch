@@ -2,11 +2,11 @@
 Promise based REST client for browsers implemented using fetch API and built with Babel and Gulp.
 ## API ##
 
- - get (String: resource, Object: params ) : Promise
- - getOne(String: resource, String: resourceId) : Promise
- - post(String: resource, Object: attributes) : Promise
- - put(String: resource, String: resourceId, Object: params) : Promise
- - delete(String: resource, String: resourceId) : Promise
+ - `get (String: resource, Object: params ) : Promise`
+ - `getOne(String: resource, String: resourceId) : Promise`
+ - `post(String: resource, Object: attributes) : Promise`
+ - `put(String: resource, String: resourceId, Object: params) : Promise`
+ - `delete(String: resource, String: resourceId) : Promise`
 
 > Every promise returns a Mixin with the method json( ) among others. For more info go to [Mozilla docs.](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
 
