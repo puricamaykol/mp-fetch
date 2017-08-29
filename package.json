@@ -1,6 +1,6 @@
 {
   "name": "mp-fetch",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Promise based REST client implemented using fetch API and built with Babel and Gulp",
   "main": "lib/index.js",
   "scripts": {

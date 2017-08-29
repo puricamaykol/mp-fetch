@@ -30,7 +30,7 @@ class RestClient {
     if (queryString.length > 0) {
       return fetch(`${this.baseUrl}/${resource}?${queryString.join("&")}`);
     }
-    return fetch(`${this.baseUrl}/${resource}`);
+    return fetch(`${this.baseUrl}/${resource}`, {mode: 'cors'});
 
   }
   /**
@@ -50,7 +50,7 @@ class RestClient {
     if (resourceId === null) {
       return Promise.reject(new Error("Resource Id not defined"));
     }
-    return fetch(`${this.baseUrl}/${resource}/${resourceId}`);
+    return fetch(`${this.baseUrl}/${resource}/${resourceId}`, {mode: 'cors'});
   }
   /**
    * Creates a Resource using its atributes
@@ -75,7 +75,8 @@ class RestClient {
     return fetch(`${this.baseUrl}/${resource}`,
       {
         method: "POST",
-        body: data
+        body: data,
+        mode: 'cors'
       });
   }
   /**
@@ -106,7 +107,8 @@ class RestClient {
     return fetch(`${this.baseUrl}/${resource}/${resourceId}`,
       {
         method: "PUT",
-        body: data
+        body: data,
+        mode: 'cors'
       });
   }
   /**
@@ -127,7 +129,8 @@ class RestClient {
       return Promise.reject(new Error("Resource Id not defined"));
     }
     return fetch(`${this.baseUrl}/${resource}/${resourceId}`, {
-      method: "DELETE"
+      method: "DELETE",
+      mode: 'cors'
     });
   }
 }
